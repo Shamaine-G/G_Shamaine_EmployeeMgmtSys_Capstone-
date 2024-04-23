@@ -11,7 +11,7 @@ const Delete = () => {
       if(confirm === false) {
         alert('Record not deleted')
         navigate('/ViewAll')} else {
-        axios.delete("http://localhost:3000/employee/" + id)
+        axios.delete("https://g-shamaine-employeemgmtsys-capstone.onrender.com/employee/" + id)
         .then(res => {
           alert('record deleted')
           navigate('/ViewAll')

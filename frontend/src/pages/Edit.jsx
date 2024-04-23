@@ -21,7 +21,7 @@ const Edit = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/employee/" + id)
+      .get("https://g-shamaine-employeemgmtsys-capstone.onrender.com/employee/" + id)
       .then((res) => setData(res.data.employee))
       .catch((err) => console.log(err));
   }, []);
@@ -29,7 +29,7 @@ const Edit = () => {
   const editEmployee = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:3000/employee/" + id, data)
+      .put("https://g-shamaine-employeemgmtsys-capstone.onrender.com/employee/" + id, data)
       .then((res) => {
         alert("Data updated sucessfully!");
         navigate("/ViewAll");

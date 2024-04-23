@@ -15,7 +15,7 @@ const ViewAll = () => {
   }, []);
 
   const fetchEmployees = async () => {
-    const res = await axios.get("http://localhost:3000/employee");
+    const res = await axios.get("https://g-shamaine-employeemgmtsys-capstone.onrender.com/employee");
     setEmployee(res.data.employee);
   };
     

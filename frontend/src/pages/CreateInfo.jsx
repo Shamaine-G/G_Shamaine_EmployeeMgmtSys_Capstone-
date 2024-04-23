@@ -29,7 +29,7 @@ const newEmployee =  () => {
     email,
     salary,
     yrsOfService}
-    axios.post('http://localhost:3000/employee', data)
+    axios.post('https://g-shamaine-employeemgmtsys-capstone.onrender.com/employee', data)
     alert('New Employee Record Created')
     navigate('/ViewAll')
 }; 
