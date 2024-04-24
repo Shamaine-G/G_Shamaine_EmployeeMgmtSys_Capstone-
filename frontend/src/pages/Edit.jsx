@@ -128,11 +128,11 @@ const Edit = () => {
           />
         </div>
 
-        <button className="btn btn-outline-primary" onClick={backBtn}>
+        <button className="btn btn-outline-secondary m-1" onClick={backBtn} style={{textDecoration: 'none', color: 'black' }}  >
           Back
         </button>
 
-        <button type="submit" className="btn btn-outline-primary">
+        <button type="submit" className="btn btn-outline-secondary" style={{textDecoration: 'none', color: 'black' }} >
           Submit
         </button>
       </form>

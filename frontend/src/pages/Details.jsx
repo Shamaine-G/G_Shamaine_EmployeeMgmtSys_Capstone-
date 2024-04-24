@@ -36,8 +36,14 @@ return (
       <p className="card-text"> Email: {employee.email}</p>
       <p className="card-text"> Salary: {employee.salary}</p>
       <p className="card-text"> Years of Service: {employee.yrsOfService}</p>
-      <Link className="card-link" to='/ViewAll'>Back</Link>
-      <Link className="card-link" to={`/Edit/${employee._id}`}>Edit</Link>
+
+      <button type="button" className="btn btn-outline-secondary m-1">
+      <Link className="card-link" to='/ViewAll' style={{textDecoration: 'none', color: 'black' }}>Back</Link>
+      </button>
+
+      <button type="button" className="btn btn-outline-secondary">
+      <Link className="card-link" to={`/Edit/${employee._id}`} style={{textDecoration: 'none', color: 'black' }}>Edit</Link>
+      </button>
 
     </div>
   </div>

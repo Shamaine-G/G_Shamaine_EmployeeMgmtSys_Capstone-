@@ -19,6 +19,22 @@ const ViewAll = () => {
     setEmployee(res.data.employee);
   };
     
+
+  // const detailsBtn = (e) =>{
+  //   e.preventDefault()
+  //   navigate('{`/Details/${employee._id}`}')
+  // }
+
+  // const editBtn = (e) =>{
+  //   e.preventDefault()
+  //   navigate('{`/Edit/${employee._id}`}')
+  // }
+
+  // const deleteBtn = (e) =>{
+  //   e.preventDefault()
+  //   navigate('{`/Delete/${employee._id}`}')
+  // }
+
   
   return (
     <div>
@@ -50,14 +66,20 @@ const ViewAll = () => {
                 <td>{employee.email}</td>
 
                 <td>
-                  <Link to={`/Details/${employee._id}`}>details</Link>
+                <button type="button" className="btn btn-outline-secondary">
+                  <Link to={`/Details/${employee._id}`} style={{textDecoration: 'none', color: 'black' }}>Details</Link>
+                  </button>
                 </td>
 
                 <td>
-                  <Link to={`/Edit/${employee._id}`}>edit</Link>
+                <button type="button" className="btn btn-outline-secondary">
+                  <Link to={`/Edit/${employee._id}`} style={{textDecoration: 'none', color: 'black' }}> Edit</Link>
+                  </button>
                 </td>
                 <td>
-                  <Link to={`/Delete/${employee._id}`}>delete</Link>
+                <button type="button" className="btn btn-outline-secondary">
+                  <Link to={`/Delete/${employee._id}`} style={{textDecoration: 'none', color: 'black' }} >Delete</Link>
+                  </button>
                 </td>
               </tr>
             ))}

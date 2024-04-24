@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div>
 <nav className="navbar navbar-expand-sm bg-light navbar-light">
-  <div className="container-fluid">
+  <div className="container-fluid navbar-text">
     <ul className="navbar-nav ">
       
       <li className="nav-item">
@@ -15,10 +15,10 @@ const Navbar = () => {
       </li>
 
       <li className="nav-item">
-        <Link to='/ViewAll' className="nav-link active">Employee Data Dashboard </Link>
+        <Link to='/ViewAll' className="nav-link active"> Data Dashboard </Link>
       </li>
       <li className="nav-item">
-        <Link to='/CreateInfo' className="nav-link active">Create New Employee File</Link>
+        <Link to='/CreateInfo' className="nav-link active">Create New File</Link>
       </li>
 
    

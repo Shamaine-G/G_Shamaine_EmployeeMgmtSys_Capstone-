@@ -34,6 +34,10 @@ const newEmployee =  () => {
     navigate('/ViewAll')
 }; 
 
+  const backBtn = (e) =>{
+    e.preventDefault()
+    navigate('/ViewAll')
+  }
 
   return (
     <div>
@@ -104,9 +108,12 @@ const newEmployee =  () => {
         value={yrsOfService}
         onChange={(e) => setYrsOfService(e.target.value)}
         />
-        </div>
-
-      <button onClick={newEmployee} type="submit" className="btn btn-outline-primary"> Submit</button>
+          </div>
+          <div>
+      <button onClick={backBtn} type="btn" className="btn btn-outline-secondary m-1"  style={{textDecoration: 'none', color: 'black' }}> Back </button>
+      
+      <button onClick={newEmployee} type="submit" className="btn btn-outline-secondary" style={{textDecoration: 'none', color: 'black' }}> Submit</button>
+          </div>
 
       </form>
 
